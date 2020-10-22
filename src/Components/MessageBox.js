@@ -14,7 +14,7 @@ const MessageBox = forwardRef(({ message, username }, ref) => {
             variant="h5" 
             component="h2"
           >
-            {!isUser && `${message.username || 'Unknown User' }: `}: {message.message}
+            {!isUser && `${message.username || 'Unknown User' }: `} {message.message}
           </Typography>
         </CardContent>
       </Card>
